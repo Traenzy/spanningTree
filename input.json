@@ -1,13 +1,13 @@
 [
   {
-    "nodeIds": {
-      "A": 5,
-      "B": 1,
-      "C": 3,
-      "D": 7,
-      "E": 6,
-      "F": 4
-    },
+    "nodeIds": [
+      {"name": "A", "weight": 5},
+      {"name": "B", "weight": 1},
+      {"name": "C", "weight": 3},
+      {"name": "D", "weight": 7},
+      {"name": "E", "weight": 6},
+      {"name": "F", "weight": 4}
+    ],
     "edges": {
       "A_B": 10,
       "A_C": 10,
