@@ -1,6 +1,6 @@
 [
   {
-    "nodeIds": [
+    "nodes": [
       {"name": "A", "weight": 5},
       {"name": "B", "weight": 1},
       {"name": "C", "weight": 3},
