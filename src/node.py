@@ -5,7 +5,7 @@ from edge import Edge
 def create_nodes(node_data):
     nodes = {}
     for node in node_data:
-        nodes[node['name']] = Node(node['name'], node['weight'])
+        nodes[node['name']] = Node(node['name'], node['id'])
     return nodes
 
 # Function to add edges to nodes
