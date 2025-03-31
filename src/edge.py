@@ -1,3 +1,11 @@
+# Function to create edges from edge data
+def create_edges(edge_data, nodes):
+    edges = []
+    for edge_name, weight in edge_data.items():
+        node_names = edge_name.split('_')
+        edges.append(Edge(nodes[node_names[0]], nodes[node_names[1]], weight))
+    return edges
+
 class Edge:
     def __init__(self, node1, node2, weight):
         self.node1 = node1

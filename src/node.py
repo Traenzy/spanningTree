@@ -1,4 +1,27 @@
 from edge import Edge
+# --- Static functions to initialize nodes and edges ---
+
+# Function to create nodes from node data
+def create_nodes(node_data):
+    nodes = {}
+    for node in node_data:
+        nodes[node['name']] = Node(node['name'], node['weight'])
+    return nodes
+
+# Function to add edges to nodes
+# Goes through all nodes and adds the edges that are connected to the node
+def add_edges_to_nodes(nodes, edges):
+    for node in nodes:
+        node.addEdges(edgeOfNode(node.name, edges))
+
+# Function to get all edges that are connected to a node
+# Goes though all edges and checks if the node is in the edge
+def edgeOfNode(nodeName, edges):
+    nodeEdges = []
+    for edge in edges:
+        if edge.nodeInEdge(nodeName):
+            nodeEdges.append(edge)
+    return nodeEdges
 
 class Node:
     def __init__(self, name, id, pEdges=None):
