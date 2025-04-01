@@ -18,12 +18,13 @@ def read_input(file_path):
 
 # Executes the spanning tree algorithm
 def executeAlgorithm(nodeList):
-    random.shuffle(nodeList)
     
     changed = []
     iteration = 0
     while changed.count(True) > 0 or iteration < nodeList.__len__() ** 2:
         changed = []
+        random.shuffle(nodeList)    # Randomize the order of the nodes 
+
         for node in nodeList:
             changed.append(node.sendBPDU())
         iteration += 1

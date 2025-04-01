@@ -1,10 +1,10 @@
 # Spanning Tree
 Dies ist ein Laborprojekt bei Friedmann Stockmayer für das Kommunikations- und Netztechnik Labor.
 
-# Requirements
+### Requirements
 Python: ^3.7
 
-# Ausführung
+### Ausführung
 Um dieses Programm auszuführen, muss in die Konsole `py main.py` eingegeben werden (Vom Projekt-Ordner aus).
 
 # Aufbau
@@ -81,7 +81,7 @@ Gibt das Ergebnis des Spanning Tree Algorithmus aus.
 
 ---
 
-## **Hauptablauf (`__main__`)**
+## Hauptablauf
 1. **Einlesen der JSON-Daten** (`read_input`).
 2. **Erstellung der Knoten** (`create_nodes`).
 3. **Erstellung der Kanten** (`create_edges`).
